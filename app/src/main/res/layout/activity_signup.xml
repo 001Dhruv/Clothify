@@ -15,7 +15,7 @@
     <androidx.cardview.widget.CardView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_margin="25dp"
+        android:layout_margin="10dp"
         android:elevation="10dp"
         app:cardBackgroundColor="#8C7B7B"
         app:cardCornerRadius="15dp">
@@ -44,7 +44,7 @@
                 android:layout_height="wrap_content"
                 android:layout_below="@+id/tv_signup"
                 android:layout_marginLeft="30dp"
-                android:layout_marginTop="10dp"
+                android:layout_marginTop="2dp"
                 android:text="Please sign up to continue" />
 
             <androidx.cardview.widget.CardView

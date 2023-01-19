@@ -21,12 +21,14 @@ public class activity_signup extends AppCompatActivity {
             public void onClick(View v) {
                 //Add in database
                 Intent nxt=new Intent(getApplicationContext(),Home_Activity.class);
+                startActivity(nxt);
             }
         });txt_login.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 //Add in database
                 Intent nxt=new Intent(getApplicationContext(),LoginActivity.class);
+                startActivity(nxt);
             }
         });
     }

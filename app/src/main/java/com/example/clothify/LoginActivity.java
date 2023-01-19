@@ -27,12 +27,14 @@ public class LoginActivity extends AppCompatActivity {
                 edt.putBoolean("loginflag",true);
                 edt.apply();
                 Intent nxt=new Intent(getApplicationContext(),Home_Activity.class);
+                startActivity(nxt);
             }
         });
         txt_signup.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent nxt=new Intent(getApplicationContext(),activity_signup.class);
+                startActivity(nxt);
             }
         });
     }
