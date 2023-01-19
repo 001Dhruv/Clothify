@@ -1,7 +1,7 @@
 package com.example.clothify;
 
 public class UserModel {
-    String userId , FirstName , LastName , Email , userContactNumber , userPassword;
+    String userId , FirstName , LastName , Email , userContactNumber , Password;
 
     public String getUserId() {
         return userId;
@@ -43,11 +43,11 @@ public class UserModel {
         this.userContactNumber = userContactNumber;
     }
 
-    public String getUserPassword() {
-        return userPassword;
+    public String getPassword() {
+        return Password;
     }
 
-    public void setUserPassword(String userPassword) {
-        this.userPassword = userPassword;
+    public void setPassword(String userPassword) {
+        this.Password = userPassword;
     }
 }
