@@ -7,112 +7,139 @@
     android:layout_height="match_parent"
     tools:context=".LoginActivity"
     android:orientation="vertical"
-    android:background="@drawable/login_image"
-    android:layout_gravity="center"
-    android:padding="25dp">
+    android:background="#EAE4E4">
 
-    <TextView
-        android:id="@+id/tv_login"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/img_logo"
-        android:layout_marginLeft="30dp"
-        android:layout_marginTop="150dp"
-        android:text="Login"
-        android:textColor="#000"
-        android:textSize="30sp"
-        android:textStyle="bold"
 
-        />
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="216dp"
+        android:src="@drawable/login_top" />
 
-    <TextView
-        android:id="@+id/tv_signin"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/tv_login"
-        android:layout_marginLeft="30dp"
-        android:layout_marginTop="10dp"
-        android:text="Please sign in to continue"
-
-        />
-
-    <EditText
-        android:id="@+id/edit_email_login"
+    <androidx.cardview.widget.CardView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/tv_signin"
-        android:layout_marginHorizontal="30dp"
-        android:layout_marginTop="30dp"
-        android:background="@android:color/background_light"
-        android:drawableLeft="@drawable/ic_email_24"
-        android:drawablePadding="10dp"
-        android:elevation="20dp"
-        android:hint="Email"
-        android:imeOptions="actionNext"
-        android:inputType="textEmailAddress"
-        android:padding="16dp"
-        android:singleLine="true"
-        />
+        android:layout_margin="25dp"
+        android:elevation="10dp"
+        app:cardBackgroundColor="#8C7B7B"
+        app:cardCornerRadius="15dp">
 
-    <EditText
-        android:id="@+id/edit_password_login"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/edit_email_login"
-        android:layout_marginHorizontal="30dp"
-        android:layout_marginTop="30dp"
-        android:background="@color/white"
-        android:drawableLeft="@drawable/ic_key_24"
-        android:drawablePadding="10dp"
-        android:elevation="20dp"
-        android:hint="Password"
-        android:imeOptions="actionDone"
-        android:inputType="textPassword"
-        android:padding="16dp"
-        android:singleLine="true" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#EAE4E4"
+            android:orientation="vertical"
+            tools:context=".LoginActivity">
 
-    <android.widget.Button
-        android:id="@+id/button"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/edit_password_login"
-        android:layout_alignParentRight="true"
-        android:layout_centerInParent="true"
-        android:layout_marginHorizontal="30dp"
-        android:layout_marginTop="30dp"
+            <TextView
+                android:id="@+id/tv_login"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/img_logo"
+                android:layout_marginLeft="30dp"
 
-        android:background="@drawable/button_back"
-        android:drawableRight="@drawable/ic_arrow_24"
-        android:drawablePadding="12dp"
-        android:paddingHorizontal="30dp"
-        android:text="Login"
-        android:textColor="#fff" />
+                android:text="Login"
+                android:textColor="#0E0E0E"
+                android:textSize="30sp"
+                app:fontFamily="@font/alfa_slab_one" />
 
-    <RelativeLayout
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
-        android:padding="10dp"
-        android:layout_centerHorizontal="true">
+            <TextView
+                android:id="@+id/tv_signin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_login"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="10dp"
+                android:text="Please sign in to continue" />
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Don't have a account?"
-            android:id="@+id/acc"
-            android:layout_marginLeft="25dp"
-            />
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:elevation="10dp"
+                app:cardCornerRadius="10dp">
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Sign up"
-            android:textStyle="bold"
-            android:layout_marginLeft="5dp"
-            android:textColor="#FF9800"
-            android:layout_toRightOf="@+id/acc"
+                <EditText
+                    android:id="@+id/edit_email_login"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tv_signin"
+                    android:background="@android:color/background_light"
+                    android:drawableLeft="@drawable/ic_email_24"
+                    android:drawablePadding="10dp"
+                    android:elevation="20dp"
+                    android:hint="Email"
+                    android:imeOptions="actionNext"
+                    android:inputType="textEmailAddress"
+                    android:padding="16dp"
+                    android:singleLine="true" />
+            </androidx.cardview.widget.CardView>
 
-            />
-    </RelativeLayout>
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:elevation="10dp"
+                app:cardCornerRadius="10dp">
+
+                <EditText
+                    android:id="@+id/edit_password_login"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/edit_email_login"
+                    android:background="@color/white"
+                    android:drawableLeft="@drawable/ic_key_24"
+                    android:drawablePadding="10dp"
+                    android:elevation="20dp"
+                    android:hint="Password"
+                    android:imeOptions="actionDone"
+                    android:inputType="textPassword"
+                    android:padding="16dp"
+                    android:singleLine="true" />
+            </androidx.cardview.widget.CardView>
+
+            <android.widget.Button
+                android:id="@+id/button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/edit_password_login"
+                android:layout_alignParentRight="true"
+                android:layout_centerInParent="true"
+                android:layout_marginHorizontal="30dp"
+                android:layout_marginTop="30dp"
+
+                android:background="@drawable/button_back"
+                android:drawableRight="@drawable/ic_arrow_24"
+                android:drawablePadding="12dp"
+                android:paddingHorizontal="30dp"
+                android:text="Login"
+                android:textColor="#fff" />
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:padding="10dp">
+
+                <TextView
+                    android:id="@+id/acc"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="25dp"
+                    android:text="Don't have a account?" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_toRightOf="@+id/acc"
+                    android:text="Sign up"
+                    android:textColor="#FF9800"
+                    android:textStyle="bold"
+
+                    />
+            </RelativeLayout>
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
 
 </LinearLayout>
