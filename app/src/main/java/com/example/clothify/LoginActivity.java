@@ -16,9 +16,10 @@ public class LoginActivity extends AppCompatActivity {
         getSupportActionBar().hide();
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
-        Button buttonlogin=findViewById(R.id.button_login);
-        TextView txt_signup=findViewById(R.id.txt_signup);
-        buttonlogin.setOnClickListener(new View.OnClickListener() {
+
+        Button btnLogin = findViewById(R.id.btn_login);
+        TextView txtSignup = findViewById(R.id.txt_signup);
+        btnLogin.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 //validate user
@@ -30,7 +31,7 @@ public class LoginActivity extends AppCompatActivity {
                 startActivity(nxt);
             }
         });
-        txt_signup.setOnClickListener(new View.OnClickListener() {
+        txtSignup.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent nxt=new Intent(getApplicationContext(),activity_signup.class);
