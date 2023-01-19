@@ -98,7 +98,7 @@
             </androidx.cardview.widget.CardView>
 
             <android.widget.Button
-                android:id="@+id/button"
+                android:id="@+id/button_login"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_below="@+id/edit_password_login"
@@ -112,7 +112,8 @@
                 android:drawablePadding="12dp"
                 android:paddingHorizontal="30dp"
                 android:text="Login"
-                android:textColor="#fff" />
+                android:textColor="#fff"
+                />
 
             <RelativeLayout
                 android:layout_width="wrap_content"
@@ -131,6 +132,7 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:id="@+id/txt_signup"
                     android:layout_marginLeft="5dp"
                     android:layout_toRightOf="@+id/acc"
                     android:text="Sign up"

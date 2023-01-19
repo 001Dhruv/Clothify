@@ -1,6 +1,7 @@
 package com.example.clothify;
 
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.os.Handler;
 import android.os.Bundle;
 import android.view.WindowManager;
@@ -19,11 +20,18 @@ public class SplashActivity extends AppCompatActivity {
         new Handler().postDelayed(new Runnable() {
             @Override
             public void run() {
-                Intent i=new Intent(getApplicationContext(),
-                        LoginActivity.class);
-
-                startActivity(i);
-
+                SharedPreferences pref=getSharedPreferences("login",MODE_PRIVATE);
+                boolean check=pref.getBoolean("loginflag",false);
+                if(check) {
+                    Intent i = new Intent(getApplicationContext(),
+                            Home_Activity.class);
+                    startActivity(i);
+                }
+                else{
+                    Intent i = new Intent(getApplicationContext(),
+                            LoginActivity.class);
+                    startActivity(i);
+                }
                 finish();
             }
         }, SPLASH_SCREEN_TIME_OUT);
