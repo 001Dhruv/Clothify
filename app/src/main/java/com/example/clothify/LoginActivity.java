@@ -57,7 +57,7 @@ public class LoginActivity extends AppCompatActivity {
                 //validate user
 
                 progressDialog = new ProgressDialog(LoginActivity.this);
-                progressDialog.setMessage("Login You in...");
+                progressDialog.setMessage("Loging You in...");
                 progressDialog.show();
 
                 String userEmail = edt_email.getText().toString();
@@ -98,7 +98,7 @@ public class LoginActivity extends AppCompatActivity {
                                 }
 
                                 @Override
-                                public void onCancelled(@NonNull DatabaseError error) {
+                                public void onCancelled(@NonNull DatabaseError error ) {
 
                                 }
                             });
