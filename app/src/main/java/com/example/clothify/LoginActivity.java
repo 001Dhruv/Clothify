@@ -81,11 +81,13 @@ public class LoginActivity extends AppCompatActivity {
                                     UserModel userModel = snapshot.getValue(UserModel.class);
                                     String fname = userModel.getFirstName();
                                     String lname = userModel.getLastName();
+                                    String email=userModel.getEmail();
 
                                     SharedPreferences s1 = getSharedPreferences("S1",MODE_PRIVATE);
                                     SharedPreferences.Editor editor = s1.edit();
                                     editor.putString("FIRSTNAME",fname);
                                     editor.putString("LASTNAME",lname);
+                                    editor.putString("EMAIL",email);
                                     editor.commit();
 
                                     Intent i = new Intent(LoginActivity.this,Home_Activity.class);

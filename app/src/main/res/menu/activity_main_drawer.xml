@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group>
+        <item
+            android:id="@+id/navbar_yourorders"
+            android:icon="@drawable/your_orders"
+            android:title="Your Orders" />
+        <item
+            android:id="@+id/navbar_yourwishlist"
+            android:icon="@drawable/wishlist"
+            android:title="Your Wishlist" />
+        <item
+            android:id="@+id/action_cart"
+            android:icon="@drawable/action_cart"
+            android:title="Your Cart" />
+        <item
+            android:id="@+id/action_logout"
+            android:icon="@drawable/nav_logout"
+            android:title="Log out" />
+    </group>
+</menu>

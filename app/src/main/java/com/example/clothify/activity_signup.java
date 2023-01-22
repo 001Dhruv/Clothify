@@ -106,6 +106,7 @@ public class activity_signup extends AppCompatActivity {
                             SharedPreferences.Editor editor = s1.edit();
                             editor.putString("FIRSTNAME",strFn);
                             editor.putString("LASTNAME",strLn);
+                            editor.putString("EMAIL",strEmail);
                             editor.commit();
 
 
