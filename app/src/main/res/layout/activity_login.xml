@@ -94,7 +94,7 @@
                     android:drawablePadding="10dp"
                     android:elevation="20dp"
                     android:hint="Password"
-                    android:imeOptions="actionDone"
+                    android:imeOptions="actionGo"
                     android:inputType="textPassword"
                     android:padding="16dp"
                     android:singleLine="true"
