@@ -17,7 +17,6 @@ import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
 import android.view.View;
-import android.widget.Button;
 import android.widget.TextView;
 
 import com.google.android.material.navigation.NavigationView;
@@ -41,6 +40,8 @@ public class Home_Activity extends AppCompatActivity {
         toolbar = findViewById(R.id.toolbar);
         System.out.println(toolbar);
         setSupportActionBar(toolbar);
+//        getSupportActionBar().setDisplayShowTitleEnabled(false);
+        getSupportActionBar().setTitle("Clothify");
 
         ActionBarDrawerToggle toggle = new ActionBarDrawerToggle
                 (this, drawerLayout, toolbar, R.string.navigation_drawer_open, R.string.navigation_drawer_close);
@@ -96,12 +97,29 @@ public class Home_Activity extends AppCompatActivity {
         ft.add(R.id.container, fragment);
         ft.commit();
     }
+    public void onBackPressed(){
+        if(drawerLayout.isDrawerOpen(GravityCompat.START)){
+            drawerLayout.closeDrawer(GravityCompat.START);
+        } else if (getFragmentManager().getBackStackEntryCount() != 0) {
+            getFragmentManager().popBackStack();
+        }
+        else{
+            super.onBackPressed();
+        }
 
-    @Override
-    public void onBackPressed() {
+
+    }
+
+
+    public void onBackPressed(){
+
+
         if (drawerLayout.isDrawerOpen(GravityCompat.START)) {
             drawerLayout.closeDrawer(GravityCompat.START);
-        } else {
+        }else if (getFragmentManager().getBackStackEntryCount() != 0) {
+            getFragmentManager().popBackStack();
+        }
+        else {
             super.onBackPressed();
         }
     }
@@ -127,6 +145,7 @@ public class Home_Activity extends AppCompatActivity {
         return super.onOptionsItemSelected(item);
     }
 }
+
 //        Button btn_logout=findViewById(R.id.btn_logout);
 //        fn = findViewById(R.id.txt_fn);
 //        ln = findViewById(R.id.txt_ln);
