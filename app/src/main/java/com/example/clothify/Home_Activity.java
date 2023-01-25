@@ -111,19 +111,6 @@ public class Home_Activity extends AppCompatActivity {
     }
 
 
-    public void onBackPressed(){
-
-
-        if (drawerLayout.isDrawerOpen(GravityCompat.START)) {
-            drawerLayout.closeDrawer(GravityCompat.START);
-        }else if (getFragmentManager().getBackStackEntryCount() != 0) {
-            getFragmentManager().popBackStack();
-        }
-        else {
-            super.onBackPressed();
-        }
-    }
-
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         new MenuInflater(this).inflate(R.menu.toolbar_items,menu);
