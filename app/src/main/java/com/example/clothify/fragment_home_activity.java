@@ -61,7 +61,7 @@ public class fragment_home_activity extends Fragment {
 
         //////END OF DUMMY DATA
 
-        home_fragment_recycler_adapter adapter=new home_fragment_recycler_adapter(getContext(),arr_home_items);
+        home_fragment_recycler_adapter adapter=new home_fragment_recycler_adapter(getContext(),arr_home_items,R.layout.home_fragment_raw);
         recyclerView.setAdapter(adapter);
         return view;
 

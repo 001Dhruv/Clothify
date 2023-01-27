@@ -16,16 +16,19 @@ import java.util.ArrayList;
 public class home_fragment_recycler_adapter extends RecyclerView.Adapter<home_fragment_recycler_adapter.ViewHolder>{
     Context context;
     ArrayList<home_fragment_model> arrlist;
-    home_fragment_recycler_adapter(Context context, ArrayList<home_fragment_model> arrlist){
+    int raw_id;
+    home_fragment_recycler_adapter(Context context, ArrayList<home_fragment_model> arrlist,int raw_id){
         this.context=context;
         this.arrlist=arrlist;
+        this.raw_id=raw_id;
+
     }
 
     @NonNull
     @Override
     public ViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
 
-        View view=LayoutInflater.from(context).inflate(R.layout.home_fragment_raw,parent,false);
+        View view=LayoutInflater.from(context).inflate(raw_id,parent,false);
         ViewHolder viewHolder=new ViewHolder(view);
         return viewHolder;
     }
