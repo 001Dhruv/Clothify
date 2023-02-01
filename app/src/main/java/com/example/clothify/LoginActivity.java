@@ -105,6 +105,10 @@ public class LoginActivity extends AppCompatActivity {
                             });
                         }else{
                             Toast.makeText(LoginActivity.this, "Invalid Credentials!!!", Toast.LENGTH_SHORT).show();
+                            edt_email.setText("");
+                            edt_password.setText("");
+//                            edt_email.setBackgroundColor(R.color.invalid_credentials);
+//                            edt_password.setBackgroundColor(R.color.invalid_credentials);
                             if(progressDialog.isShowing()){
                                 progressDialog.dismiss();
                             }
