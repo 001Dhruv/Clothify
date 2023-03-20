@@ -68,17 +68,17 @@ public class Home_Activity extends AppCompatActivity {
                 int id = item.getItemId();
                 if (id == R.id.navbar_yourorders) {
                     loadFragment(new fragment_your_orders());
-                    set_title(new fragment_your_orders());
+                    set_title(id);
                 } else if (id == R.id.navbar_yourwishlist) {
                     loadFragment(new fragment_your_wishlist());
-                    set_title(new fragment_your_wishlist());
+                    set_title(id);
 
                 } else if (id == R.id.action_cart) {
                     loadFragment(new fragment_your_cart());
-                    set_title(new fragment_your_cart());
+                    set_title(id);
                 } else if (id == R.id.navbar_home) {
                     loadFragment(new fragment_home_activity());
-                    set_title(new fragment_home_activity());
+                    set_title(id);
                 } else if (id == R.id.action_logout) {
                     SharedPreferences pref = getSharedPreferences("login", MODE_PRIVATE);
                     SharedPreferences.Editor edt = pref.edit();
@@ -139,11 +139,13 @@ public class Home_Activity extends AppCompatActivity {
         int id=item.getItemId();
         if (id == R.id.navbar_home) {
             loadFragment(new fragment_home_activity());
-
+            set_title(id);
         } else if (id == R.id.toolbar_notification) {
             loadFragment(new fragment_notification());
+            set_title(id);
         } else if (id==R.id.action_cart) {
             loadFragment(new fragment_your_cart());
+            set_title(id);
         }
         return super.onOptionsItemSelected(item);
     }
@@ -161,8 +163,24 @@ public class Home_Activity extends AppCompatActivity {
        else if(id==new fragment_notification().getId()){
            getSupportActionBar().setTitle("Notifications");
        }
-
        else if(id==new fragment_home_activity().getId()){
+           getSupportActionBar().setTitle("Clothify");
+       }
+    }
+    public void set_title(int id){
+       if(id==R.id.action_cart){
+           getSupportActionBar().setTitle("Your Cart");
+       }
+       else if(id==R.id.navbar_yourwishlist){
+           getSupportActionBar().setTitle("Your Wishlist");
+       }
+       else if(id==R.id.navbar_yourorders){
+           getSupportActionBar().setTitle("Your Orders");
+       }
+       else if(id==R.id.toolbar_notification){
+           getSupportActionBar().setTitle("Notifications");
+       }
+       else if(id==R.id.navbar_home){
            getSupportActionBar().setTitle("Clothify");
        }
     }
