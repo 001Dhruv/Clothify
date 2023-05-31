@@ -46,6 +46,7 @@ public class Home_Activity extends AppCompatActivity {
         toolbar = findViewById(R.id.toolbar);
         System.out.println(toolbar);
         setSupportActionBar(toolbar);
+        HomeActivityInstance.setHomeActivity(this);
 //        getSupportActionBar().setDisplayShowTitleEnabled(false);
 
         ActionBarDrawerToggle toggle = new ActionBarDrawerToggle
@@ -57,9 +58,7 @@ public class Home_Activity extends AppCompatActivity {
         email = (TextView) nav_header.findViewById(R.id.navbar_header_email);
         username = (TextView) nav_header.findViewById(R.id.navbar_header_username);
         SharedPreferences s2 = getSharedPreferences("S1", MODE_PRIVATE);
-        username.setText(s2.getString("FIRSTNAME", "") + " " + s2.getString("LASTNAME", ""));
-
-
+        username.setText(s2.getString("USER_NAME", ""));
         email.setText(s2.getString("EMAIL", ""));
 //        System.out.printf(s2.getString("EMAIL",""));
         navigationView.setNavigationItemSelectedListener(new NavigationView.OnNavigationItemSelectedListener() {
@@ -86,8 +85,8 @@ public class Home_Activity extends AppCompatActivity {
                     edt.apply();
                     SharedPreferences sharedPreferences = getSharedPreferences("S1", MODE_PRIVATE);
                     SharedPreferences.Editor editor = sharedPreferences.edit();
-                    editor.remove("FIRSTNAME");
-                    editor.remove("LASTNAME");
+                    editor.remove("USER_NAME");
+                    editor.remove("EMAIL");
                     editor.commit();
                     Intent nxt = new Intent(getApplicationContext(), LoginActivity.class);
                     startActivity(nxt);
@@ -99,7 +98,7 @@ public class Home_Activity extends AppCompatActivity {
         });
     }
 
-    private void loadFragment(Fragment fragment) {
+    public void loadFragment(Fragment fragment) {
         FragmentManager fm = getSupportFragmentManager();
         if(flag) {
             //solves problem of onBackPressed for Fragment
@@ -114,16 +113,16 @@ public class Home_Activity extends AppCompatActivity {
 
     }
     public void onBackPressed(){
+
         if(drawerLayout.isDrawerOpen(GravityCompat.START)){
             drawerLayout.closeDrawer(GravityCompat.START);
         } else if (getSupportFragmentManager().getBackStackEntryCount() != 0) {
             getSupportFragmentManager().popBackStack();
-            set_title(getVisibleFragment());
+            set_title(getVisibleFragment().getId());
         }
         else{
             super.onBackPressed();
         }
-
 
     }
 
@@ -149,40 +148,42 @@ public class Home_Activity extends AppCompatActivity {
         }
         return super.onOptionsItemSelected(item);
     }
-    public void set_title(Fragment visible_fragment){
-       int id= visible_fragment.getId();
-       if(id==new fragment_your_cart().getId()){
-           getSupportActionBar().setTitle("Your Cart");
-       }
-       else if(id==new fragment_your_wishlist().getId()){
-           getSupportActionBar().setTitle("Your Wishlist");
-       }
-       else if(id==new fragment_your_orders().getId()){
-           getSupportActionBar().setTitle("Your Orders");
-       }
-       else if(id==new fragment_notification().getId()){
-           getSupportActionBar().setTitle("Notifications");
-       }
-       else if(id==new fragment_home_activity().getId()){
-           getSupportActionBar().setTitle("Clothify");
-       }
-    }
+//    public void set_title(Fragment visible_fragment){
+//        int id= visible_fragment.getId();
+//        if(id==new fragment_your_cart().getId()){
+//            getSupportActionBar().setTitle("Your Cart");
+//        }
+//        else if(id==new fragment_your_wishlist().getId()){
+//            getSupportActionBar().setTitle("Your Wishlist");
+//        }
+//        else if(id==new fragment_your_orders().getId()){
+//            getSupportActionBar().setTitle("Your Orders");
+//        }
+//        else if(id==new fragment_notification().getId()){
+//            getSupportActionBar().setTitle("Notifications");
+//        }
+//        else if(id==new fragment_home_activity().getId()){
+//            getSupportActionBar().setTitle("Clothify");
+//        }
+//    }
     public void set_title(int id){
-       if(id==R.id.action_cart){
-           getSupportActionBar().setTitle("Your Cart");
-       }
-       else if(id==R.id.navbar_yourwishlist){
-           getSupportActionBar().setTitle("Your Wishlist");
-       }
-       else if(id==R.id.navbar_yourorders){
-           getSupportActionBar().setTitle("Your Orders");
-       }
-       else if(id==R.id.toolbar_notification){
-           getSupportActionBar().setTitle("Notifications");
-       }
-       else if(id==R.id.navbar_home){
-           getSupportActionBar().setTitle("Clothify");
-       }
+        if(id==R.id.action_cart){
+            getSupportActionBar().setTitle("Your Cart");
+        }
+        else if(id==R.id.navbar_yourwishlist){
+            getSupportActionBar().setTitle("Your Wishlist");
+        }
+        else if(id==R.id.navbar_yourorders){
+            getSupportActionBar().setTitle("Your Orders");
+        }
+        else if(id==R.id.toolbar_notification){
+            getSupportActionBar().setTitle("Notifications");
+        }
+        else if(id==R.id.navbar_home){
+            getSupportActionBar().setTitle("Clothify");
+        } else if (id==1) {
+            getSupportActionBar().setTitle("Description");
+        }
     }
     public Fragment getVisibleFragment(){
         FragmentManager fragmentManager = this.getSupportFragmentManager();
@@ -196,4 +197,3 @@ public class Home_Activity extends AppCompatActivity {
         return null;
     }
 }
-

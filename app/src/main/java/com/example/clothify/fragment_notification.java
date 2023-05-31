@@ -23,27 +23,27 @@ public class fragment_notification extends Fragment {
         recyclerView.setLayoutManager(new LinearLayoutManager(view.getContext()));
 
         ////DUMMY DATA
+//COMMENTED DUE TO ERRORS OF IMG AS STRING AND INT
 
 
-
-        arr_notification.add(new home_fragment_model(R.drawable.login_top,"MORE THAN 40% DISCOUNT","Hoodies and Jackets for men as well as women." +
-                "with 7 days replacement policy","Free😁"));
-        arr_notification.add(new home_fragment_model(R.drawable.login_top,"MORE THAN 40% DISCOUNT","Hoodies and Jackets for men as well as women." +
-                "with 7 days replacement policy","Free😁"));
-        arr_notification.add(new home_fragment_model(R.drawable.login_top,"MORE THAN 40% DISCOUNT","Hoodies and Jackets for men as well as women." +
-                "with 7 days replacement policy","Free😁"));arr_notification.add(new home_fragment_model(R.drawable.login_top,"MORE THAN 40% DISCOUNT","Hoodies and Jackets for men as well as women." +
-                "with 7 days replacement policy","Free😁"));arr_notification.add(new home_fragment_model(R.drawable.login_top,"MORE THAN 40% DISCOUNT","Hoodies and Jackets for men as well as women." +
-                "with 7 days replacement policy","Free😁"));arr_notification.add(new home_fragment_model(R.drawable.login_top,"MORE THAN 40% DISCOUNT","Hoodies and Jackets for men as well as women." +
-                "with 7 days replacement policy","Free😁"));arr_notification.add(new home_fragment_model(R.drawable.login_top,"MORE THAN 40% DISCOUNT","Hoodies and Jackets for men as well as women." +
-                "with 7 days replacement policy","Free😁"));arr_notification.add(new home_fragment_model(R.drawable.login_top,"MORE THAN 40% DISCOUNT","Hoodies and Jackets for men as well as women." +
-                "with 7 days replacement policy","Free😁"));arr_notification.add(new home_fragment_model(R.drawable.login_top,"MORE THAN 40% DISCOUNT","Hoodies and Jackets for men as well as women." +
-                "with 7 days replacement policy","Free😁"));arr_notification.add(new home_fragment_model(R.drawable.login_top,"MORE THAN 40% DISCOUNT","Hoodies and Jackets for men as well as women." +
-                "with 7 days replacement policy","Free😁"));arr_notification.add(new home_fragment_model(R.drawable.login_top,"MORE THAN 40% DISCOUNT","Hoodies and Jackets for men as well as women." +
-                "with 7 days replacement policy","Free😁"));arr_notification.add(new home_fragment_model(R.drawable.login_top,"MORE THAN 40% DISCOUNT","Hoodies and Jackets for men as well as women." +
-                "with 7 days replacement policy","Free😁"));arr_notification.add(new home_fragment_model(R.drawable.login_top,"MORE THAN 40% DISCOUNT","Hoodies and Jackets for men as well as women." +
-                "with 7 days replacement policy","Free😁"));
-
-        //////END OF DUMMY DATA
+//        arr_notification.add(new home_fragment_model(R.drawable.login_top,"MORE THAN 40% DISCOUNT","Hoodies and Jackets for men as well as women." +
+//                "with 7 days replacement policy","Free😁"));
+//        arr_notification.add(new home_fragment_model(R.drawable.login_top,"MORE THAN 40% DISCOUNT","Hoodies and Jackets for men as well as women." +
+//                "with 7 days replacement policy","Free😁"));
+//        arr_notification.add(new home_fragment_model(R.drawable.login_top,"MORE THAN 40% DISCOUNT","Hoodies and Jackets for men as well as women." +
+//                "with 7 days replacement policy","Free😁"));arr_notification.add(new home_fragment_model(R.drawable.login_top,"MORE THAN 40% DISCOUNT","Hoodies and Jackets for men as well as women." +
+//                "with 7 days replacement policy","Free😁"));arr_notification.add(new home_fragment_model(R.drawable.login_top,"MORE THAN 40% DISCOUNT","Hoodies and Jackets for men as well as women." +
+//                "with 7 days replacement policy","Free😁"));arr_notification.add(new home_fragment_model(R.drawable.login_top,"MORE THAN 40% DISCOUNT","Hoodies and Jackets for men as well as women." +
+//                "with 7 days replacement policy","Free😁"));arr_notification.add(new home_fragment_model(R.drawable.login_top,"MORE THAN 40% DISCOUNT","Hoodies and Jackets for men as well as women." +
+//                "with 7 days replacement policy","Free😁"));arr_notification.add(new home_fragment_model(R.drawable.login_top,"MORE THAN 40% DISCOUNT","Hoodies and Jackets for men as well as women." +
+//                "with 7 days replacement policy","Free😁"));arr_notification.add(new home_fragment_model(R.drawable.login_top,"MORE THAN 40% DISCOUNT","Hoodies and Jackets for men as well as women." +
+//                "with 7 days replacement policy","Free😁"));arr_notification.add(new home_fragment_model(R.drawable.login_top,"MORE THAN 40% DISCOUNT","Hoodies and Jackets for men as well as women." +
+//                "with 7 days replacement policy","Free😁"));arr_notification.add(new home_fragment_model(R.drawable.login_top,"MORE THAN 40% DISCOUNT","Hoodies and Jackets for men as well as women." +
+//                "with 7 days replacement policy","Free😁"));arr_notification.add(new home_fragment_model(R.drawable.login_top,"MORE THAN 40% DISCOUNT","Hoodies and Jackets for men as well as women." +
+//                "with 7 days replacement policy","Free😁"));arr_notification.add(new home_fragment_model(R.drawable.login_top,"MORE THAN 40% DISCOUNT","Hoodies and Jackets for men as well as women." +
+//                "with 7 days replacement policy","Free😁"));
+//
+//        //////END OF DUMMY DATA
 
         home_fragment_recycler_adapter adapter=new home_fragment_recycler_adapter(getContext(),arr_notification,R.layout.cart_fragment_raw);
         recyclerView.setAdapter(adapter);

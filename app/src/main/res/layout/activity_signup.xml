@@ -11,18 +11,11 @@
     android:gravity="center"
     android:background="#F1F2F3">
 
-
-
-
-
-
-
-
     <ImageView
         android:layout_width="200dp"
         android:layout_height="120dp"
         android:src="@drawable/splash_gif" />
-    <ScrollView android:layout_marginTop="30dp"
+    <ScrollView
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
         android:id="@+id/scrollView">
@@ -127,8 +120,39 @@
                     android:singleLine="true"
                     android:layout_marginHorizontal="12dp"
                     android:layout_marginVertical="8dp"/>
+            <EditText
+                android:id="@+id/edt_address_signup"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/user_bg"
+                android:drawableLeft="@drawable/baseline_address_24"
+                android:drawablePadding="10dp"
+                android:elevation="20dp"
+                android:hint="Address"
+                android:imeOptions="actionNext"
+                android:inputType="text"
+                android:padding="16dp"
+                android:singleLine="true"
+                android:layout_marginHorizontal="12dp"
+                android:layout_marginVertical="8dp"/>
 
 
+            <EditText
+                android:id="@+id/edt_phone_signup"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/user_bg"
+                android:drawableLeft="@drawable/baseline_phone_24"
+                android:drawablePadding="10dp"
+                android:elevation="20dp"
+                android:hint="Contact Number"
+                android:imeOptions="actionDone"
+                android:inputType="phone"
+                android:padding="16dp"
+                android:singleLine="true"
+                android:layout_marginHorizontal="12dp"
+                android:layout_marginVertical="8dp"
+                />
 
 
                 <EditText
@@ -166,22 +190,6 @@
                     android:layout_marginVertical="8dp"
                     />
 
-            <EditText
-                android:id="@+id/edt_phone_signup"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:background="@drawable/user_bg"
-                android:drawableLeft="@drawable/baseline_phone_24"
-                android:drawablePadding="10dp"
-                android:elevation="20dp"
-                android:hint="Contact Number"
-                android:imeOptions="actionDone"
-                android:inputType="phone"
-                android:padding="16dp"
-                android:singleLine="true"
-                android:layout_marginHorizontal="12dp"
-                android:layout_marginVertical="8dp"
-                />
 
 
             <android.widget.Button

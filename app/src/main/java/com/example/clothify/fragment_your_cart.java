@@ -25,20 +25,20 @@ public class fragment_your_cart extends Fragment {
         ////DUMMY DATA
 
 
-
-        arr_cart_items.add(new home_fragment_model(R.drawable.login_top,"HOODIE MENS","Yello with white straps best quality","1$"));
-        arr_cart_items.add(new home_fragment_model(R.drawable.login_top,"HOODIE MENS","Yello with white straps best quality","1$"));
-        arr_cart_items.add(new home_fragment_model(R.drawable.login_top,"HOODIE MENS","Yello with white straps best quality","1$"));
-        arr_cart_items.add(new home_fragment_model(R.drawable.login_top,"HOODIE MENS","Yello with white straps best quality","1$"));
-        arr_cart_items.add(new home_fragment_model(R.drawable.login_top,"HOODIE MENS","Yello with white straps best quality","1$"));
-        arr_cart_items.add(new home_fragment_model(R.drawable.login_top,"HOODIE MENS","Yello with white straps best quality","1$"));
-        arr_cart_items.add(new home_fragment_model(R.drawable.login_top,"HOODIE MENS","Yello with white straps best quality","1$"));
-        arr_cart_items.add(new home_fragment_model(R.drawable.login_top,"HOODIE MENS","Yello with white straps best quality","1$"));
-        arr_cart_items.add(new home_fragment_model(R.drawable.login_top,"HOODIE MENS","Yello with white straps best quality","1$"));
-        arr_cart_items.add(new home_fragment_model(R.drawable.login_top,"HOODIE MENS","Yello with white straps best quality","1$"));
-        arr_cart_items.add(new home_fragment_model(R.drawable.login_top,"HOODIE MENS","Yello with white straps best quality","1$"));
-        arr_cart_items.add(new home_fragment_model(R.drawable.login_top,"HOODIE MENS","Yello with white straps best quality","1$"));
-        arr_cart_items.add(new home_fragment_model(R.drawable.login_top,"HOODIE MENS","Yello with white straps best quality","1$"));
+//
+//        arr_cart_items.add(new home_fragment_model(R.drawable.login_top,"HOODIE MENS","Yello with white straps best quality","1$"));
+//        arr_cart_items.add(new home_fragment_model(R.drawable.login_top,"HOODIE MENS","Yello with white straps best quality","1$"));
+//        arr_cart_items.add(new home_fragment_model(R.drawable.login_top,"HOODIE MENS","Yello with white straps best quality","1$"));
+//        arr_cart_items.add(new home_fragment_model(R.drawable.login_top,"HOODIE MENS","Yello with white straps best quality","1$"));
+//        arr_cart_items.add(new home_fragment_model(R.drawable.login_top,"HOODIE MENS","Yello with white straps best quality","1$"));
+//        arr_cart_items.add(new home_fragment_model(R.drawable.login_top,"HOODIE MENS","Yello with white straps best quality","1$"));
+//        arr_cart_items.add(new home_fragment_model(R.drawable.login_top,"HOODIE MENS","Yello with white straps best quality","1$"));
+//        arr_cart_items.add(new home_fragment_model(R.drawable.login_top,"HOODIE MENS","Yello with white straps best quality","1$"));
+//        arr_cart_items.add(new home_fragment_model(R.drawable.login_top,"HOODIE MENS","Yello with white straps best quality","1$"));
+//        arr_cart_items.add(new home_fragment_model(R.drawable.login_top,"HOODIE MENS","Yello with white straps best quality","1$"));
+//        arr_cart_items.add(new home_fragment_model(R.drawable.login_top,"HOODIE MENS","Yello with white straps best quality","1$"));
+//        arr_cart_items.add(new home_fragment_model(R.drawable.login_top,"HOODIE MENS","Yello with white straps best quality","1$"));
+//        arr_cart_items.add(new home_fragment_model(R.drawable.login_top,"HOODIE MENS","Yello with white straps best quality","1$"));
 
 
         //////END OF DUMMY DATA

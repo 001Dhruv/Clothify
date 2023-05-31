@@ -26,14 +26,14 @@ public class fragment_your_orders extends Fragment {
         ////DUMMY DATA
 
 
-
-        arr_your_orders.add(new home_fragment_model(R.drawable.login_top,"HOODIE MENS","Yello with white straps best quality","Arriving Monday by 9PM"));
-        arr_your_orders.add(new home_fragment_model(R.drawable.login_top,"HOODIE MENS","Yello with white straps best quality","Delivered 12th oct, 2020"));
-        arr_your_orders.add(new home_fragment_model(R.drawable.login_top,"HOODIE MENS","Yello with white straps best quality","Delivered 11th oct, 2020"));
-        arr_your_orders.add(new home_fragment_model(R.drawable.login_top,"HOODIE MENS","Yello with white straps best quality","Delivered 9th oct, 2020"));
-        arr_your_orders.add(new home_fragment_model(R.drawable.login_top,"HOODIE MENS","Yello with white straps best quality","Delivered 4th oct, 2020"));
-        arr_your_orders.add(new home_fragment_model(R.drawable.login_top,"HOODIE MENS","Yello with white straps best quality","Delivered 2th oct, 2020"));
-
+//
+//        arr_your_orders.add(new home_fragment_model(R.drawable.login_top,"HOODIE MENS","Yello with white straps best quality","Arriving Monday by 9PM"));
+//        arr_your_orders.add(new home_fragment_model(R.drawable.login_top,"HOODIE MENS","Yello with white straps best quality","Delivered 12th oct, 2020"));
+//        arr_your_orders.add(new home_fragment_model(R.drawable.login_top,"HOODIE MENS","Yello with white straps best quality","Delivered 11th oct, 2020"));
+//        arr_your_orders.add(new home_fragment_model(R.drawable.login_top,"HOODIE MENS","Yello with white straps best quality","Delivered 9th oct, 2020"));
+//        arr_your_orders.add(new home_fragment_model(R.drawable.login_top,"HOODIE MENS","Yello with white straps best quality","Delivered 4th oct, 2020"));
+//        arr_your_orders.add(new home_fragment_model(R.drawable.login_top,"HOODIE MENS","Yello with white straps best quality","Delivered 2th oct, 2020"));
+//
 
         //////END OF DUMMY DATA
 

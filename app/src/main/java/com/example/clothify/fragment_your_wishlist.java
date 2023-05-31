@@ -22,23 +22,23 @@ public class fragment_your_wishlist extends Fragment {
         recyclerView.setLayoutManager(new LinearLayoutManager(view.getContext()));
 
         ////DUMMY DATA
-
-
-
-        arr_wishlist_items.add(new home_fragment_model(R.drawable.login_top,"HOODIE MENS","Yello with white straps best quality","1$"));
-        arr_wishlist_items.add(new home_fragment_model(R.drawable.login_top,"HOODIE MENS","Yello with white straps best quality","1$"));
-        arr_wishlist_items.add(new home_fragment_model(R.drawable.login_top,"HOODIE MENS","Yello with white straps best quality","1$"));
-        arr_wishlist_items.add(new home_fragment_model(R.drawable.login_top,"HOODIE MENS","Yello with white straps best quality","1$"));
-        arr_wishlist_items.add(new home_fragment_model(R.drawable.login_top,"HOODIE MENS","Yello with white straps best quality","1$"));
-        arr_wishlist_items.add(new home_fragment_model(R.drawable.login_top,"HOODIE MENS","Yello with white straps best quality","1$"));
-        arr_wishlist_items.add(new home_fragment_model(R.drawable.login_top,"HOODIE MENS","Yello with white straps best quality","1$"));
-        arr_wishlist_items.add(new home_fragment_model(R.drawable.login_top,"HOODIE MENS","Yello with white straps best quality","1$"));
-        arr_wishlist_items.add(new home_fragment_model(R.drawable.login_top,"HOODIE MENS","Yello with white straps best quality","1$"));
-        arr_wishlist_items.add(new home_fragment_model(R.drawable.login_top,"HOODIE MENS","Yello with white straps best quality","1$"));
-        arr_wishlist_items.add(new home_fragment_model(R.drawable.login_top,"HOODIE MENS","Yello with white straps best quality","1$"));
-        arr_wishlist_items.add(new home_fragment_model(R.drawable.login_top,"HOODIE MENS","Yello with white straps best quality","1$"));
-        arr_wishlist_items.add(new home_fragment_model(R.drawable.login_top,"HOODIE MENS","Yello with white straps best quality","1$"));
-        arr_wishlist_items.add(new home_fragment_model(R.drawable.login_top,"HOODIE MENS","Yello with white straps best quality","1$"));
+//
+//
+//
+//        arr_wishlist_items.add(new home_fragment_model(R.drawable.login_top,"HOODIE MENS","Yello with white straps best quality","1$"));
+//        arr_wishlist_items.add(new home_fragment_model(R.drawable.login_top,"HOODIE MENS","Yello with white straps best quality","1$"));
+//        arr_wishlist_items.add(new home_fragment_model(R.drawable.login_top,"HOODIE MENS","Yello with white straps best quality","1$"));
+//        arr_wishlist_items.add(new home_fragment_model(R.drawable.login_top,"HOODIE MENS","Yello with white straps best quality","1$"));
+//        arr_wishlist_items.add(new home_fragment_model(R.drawable.login_top,"HOODIE MENS","Yello with white straps best quality","1$"));
+//        arr_wishlist_items.add(new home_fragment_model(R.drawable.login_top,"HOODIE MENS","Yello with white straps best quality","1$"));
+//        arr_wishlist_items.add(new home_fragment_model(R.drawable.login_top,"HOODIE MENS","Yello with white straps best quality","1$"));
+//        arr_wishlist_items.add(new home_fragment_model(R.drawable.login_top,"HOODIE MENS","Yello with white straps best quality","1$"));
+//        arr_wishlist_items.add(new home_fragment_model(R.drawable.login_top,"HOODIE MENS","Yello with white straps best quality","1$"));
+//        arr_wishlist_items.add(new home_fragment_model(R.drawable.login_top,"HOODIE MENS","Yello with white straps best quality","1$"));
+//        arr_wishlist_items.add(new home_fragment_model(R.drawable.login_top,"HOODIE MENS","Yello with white straps best quality","1$"));
+//        arr_wishlist_items.add(new home_fragment_model(R.drawable.login_top,"HOODIE MENS","Yello with white straps best quality","1$"));
+//        arr_wishlist_items.add(new home_fragment_model(R.drawable.login_top,"HOODIE MENS","Yello with white straps best quality","1$"));
+//        arr_wishlist_items.add(new home_fragment_model(R.drawable.login_top,"HOODIE MENS","Yello with white straps best quality","1$"));
 
 
         //////END OF DUMMY DATA
