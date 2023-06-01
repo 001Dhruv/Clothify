@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+
+    <TextView
+        android:id="@+id/bill_sr_no"
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:text="Sr No."
+        android:paddingHorizontal="4dp"
+        android:textStyle="" />
+
+    <TextView
+        android:id="@+id/bill_p_name"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:paddingHorizontal="4dp"
+        android:text="Product Name"
+        android:textStyle="" />
+
+    <TextView
+        android:id="@+id/bill_p_qty"
+        android:layout_width="35dp"
+        android:layout_height="wrap_content"
+        android:paddingHorizontal="4dp"
+        android:text="Qty"
+        android:textStyle="" />
+
+    <TextView
+        android:id="@+id/bill_p_price"
+        android:layout_width="70dp"
+        android:layout_height="wrap_content"
+        android:paddingHorizontal="4dp"
+        android:text="Price"
+        android:textStyle="" />
+</LinearLayout>

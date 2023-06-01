@@ -66,13 +66,11 @@
                     android:textColor="@color/black"/>
                 <LinearLayout
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content">
-
-
-
+                    android:layout_height="wrap_content"
+                    >
                     <Button
                         style="bold"
-                        android:id="@+id/btn_desc_cart"
+                        android:id="@+id/btn_desc_orders"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_alignParentBottom="true"
@@ -80,14 +78,14 @@
                         android:text="Details"
                         android:textSize="10dp"/>
                     <Button
-                        android:id="@+id/btn_remove_cart"
+                        android:id="@+id/btn_review_orders"
                         style="bold"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_alignParentRight="true"
                         android:layout_alignParentBottom="true"
                         android:layout_margin="2dp"
-                        android:text="Remove"
+                        android:text="Review"
                         android:textSize="10dp"/>
                 </LinearLayout>
 

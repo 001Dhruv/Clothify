@@ -87,7 +87,7 @@
                         android:layout_height="wrap_content"
                         android:layout_alignParentBottom="true"
                         android:layout_margin="2dp"
-                        android:text="Desc"
+                        android:text="Details"
                         android:textSize="10dp"/>
                 </LinearLayout>
 

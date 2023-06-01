@@ -112,6 +112,8 @@ public class Home_Activity extends AppCompatActivity {
         }
 
     }
+
+
     public void onBackPressed(){
 
         if(drawerLayout.isDrawerOpen(GravityCompat.START)){
@@ -183,6 +185,8 @@ public class Home_Activity extends AppCompatActivity {
             getSupportActionBar().setTitle("Clothify");
         } else if (id==1) {
             getSupportActionBar().setTitle("Description");
+        }else if (id==2) {
+            getSupportActionBar().setTitle("Bill");
         }
     }
     public Fragment getVisibleFragment(){

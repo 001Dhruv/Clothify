@@ -39,7 +39,7 @@ public class fragment_home_activity extends Fragment {
                     System.out.println("Data received");
                     for(int i=0;i<ja.length();i++){
                         jo=ja.getJSONObject(i);
-                        String price=Double.toString(jo.getDouble("p_price"));
+                        String price="₹"+Double.toString(jo.getDouble("p_price"));
                         arr_home_items.add(new home_fragment_model(jo.getString("p_img"),jo.getString("p_name"),jo.getString("P_description"),price,jo.getString("p_type"),jo.getString("p_gender"),jo.getInt("p_id")));
                     }
                     System.out.println("JSON Array created successfully...");

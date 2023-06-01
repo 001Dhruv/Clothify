@@ -11,4 +11,12 @@
         android:layout_height="wrap_content"
         android:id="@+id/recyclerview_your_cart_fragment"/>
 
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btn_buy_now"
+        android:text="Place Order"
+        android:layout_gravity="bottom|end"
+        android:layout_margin="16dp"/>
+
 </FrameLayout>
