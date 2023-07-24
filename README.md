@@ -5,7 +5,7 @@ functionallities provided are:
 
 login/signup/logout, 
 cart management, 
-wishlist management and
+wishlist management, 
 buy now and bill generation
 
 Backend is implemented using servlet and jsp.
